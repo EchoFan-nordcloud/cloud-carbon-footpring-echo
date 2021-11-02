@@ -1,0 +1,10 @@
+2021-11-02T06:07:02.668Z [server] info: Cloud Carbon Footprint Server listening at http://localhost:4000 
+2021-11-02T06:13:16.216Z [api] info: Regions emissions factors API request started 
+2021-11-02T06:13:16.237Z [api] info: Footprint API request started with Start Date: 2020-11-02 and End Date: 2021-11-02 
+2021-11-02T06:13:16.255Z [cache] info: Using local cache file... 
+2021-11-02T06:13:17.903Z [api] error: Unable to process footprint request.Error: Athena start query failed. Reason User: arn:aws:iam::774022965349:user/echo.fan@nordcloud.com is not authorized to perform: athena:StartQueryExecution on resource: arn:aws:athena:eu-west-1:774022965349:workgroup/primary because no identity-based policy allows the athena:StartQueryExecution action.
+    at CostAndUsageReports.<anonymous> (/Users/shfanjj/Documents/Asset Innovation-NordCloud/SourceCode/cloud-carbon-footprint-echo/node_modules/@cloud-carbon-footprint/aws/src/lib/CostAndUsageReports.ts:546:13)
+    at step (/Users/shfanjj/Documents/Asset Innovation-NordCloud/SourceCode/cloud-carbon-footprint-echo/node_modules/@cloud-carbon-footprint/aws/dist/lib/CostAndUsageReports.js:33:23)
+    at Object.throw (/Users/shfanjj/Documents/Asset Innovation-NordCloud/SourceCode/cloud-carbon-footprint-echo/node_modules/@cloud-carbon-footprint/aws/dist/lib/CostAndUsageReports.js:14:53)
+    at rejected (/Users/shfanjj/Documents/Asset Innovation-NordCloud/SourceCode/cloud-carbon-footprint-echo/node_modules/@cloud-carbon-footprint/aws/dist/lib/CostAndUsageReports.js:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) 

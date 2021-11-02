@@ -1,0 +1,13 @@
+trigger:
+  paths:
+    include:
+      - ibmcloud
+      - .azure-pipelines/carbon-footprint.yml
+      - .azure-pipelines/templates/build.yml
+      - .azure-pipelines/templates/deploy.yml
+  branches:
+    include:
+      - master
+  tags:
+    include:
+      - 'ibmcloud/v*'
